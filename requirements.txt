@@ -1,0 +1,11 @@
+gradio
+langchain==1.0.5
+langgraph==1.0.2
+langchain-openai==1.0.2
+langchain-community==0.4.1
+arxiv==2.3.0
+pymupdf==1.26.6
+python-dotenv
+tavily-python
+requests
+openai
