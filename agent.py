@@ -38,7 +38,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install langgraph==1.0.2 langchain==1.0.5 langchain-openai==1.0.2 langchain-community==0.4.1 arxiv==2.3.0 pymupdf==1.26.6')
+#get_ipython().system('pip install langgraph==1.0.2 langchain==1.0.5 langchain-openai==1.0.2 langchain-community==0.4.1 arxiv==2.3.0 pymupdf==1.26.6')
 
 
 # ## Load Necessary Dependencies
