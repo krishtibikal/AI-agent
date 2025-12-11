@@ -71,13 +71,13 @@ OPENAI_API_KEY='REMOVED'
 TAVILY_API_KEY='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'
 
 
-# OpenAI API Key (for chat & embeddings)
-if not os.environ.get("OPENAI_API_KEY"):
-    os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key (https://platform.openai.com/account/api-keys):\n")
+# # OpenAI API Key (for chat & embeddings)
+# if not os.environ.get("OPENAI_API_KEY"):
+#     os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key (https://platform.openai.com/account/api-keys):\n")
     
-# Tavily API Key (for web search)
-if not os.environ.get("TAVILY_API_KEY"):
-    os.environ["TAVILY_API_KEY"] = getpass.getpass("Enter your Tavily API key (https://app.tavily.com/home):\n")
+# # Tavily API Key (for web search)
+# if not os.environ.get("TAVILY_API_KEY"):
+#     os.environ["TAVILY_API_KEY"] = getpass.getpass("Enter your Tavily API key (https://app.tavily.com/home):\n")
 
 
 # In[4]:
