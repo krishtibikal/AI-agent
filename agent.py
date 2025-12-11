@@ -67,18 +67,14 @@ from dotenv import load_dotenv, find_dotenv
 
 #load_dotenv('/Users/kbikal/Documents/GenAI/.env')
 
-OPENAI_API_KEY='REMOVED'
-TAVILY_API_KEY='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'
+# For local dev only (optional)
+load_dotenv()
 
+if not os.environ.get("OPENAI_API_KEY"):
+    raise RuntimeError("OPENAI_API_KEY is not set")
 
-# # OpenAI API Key (for chat & embeddings)
-# if not os.environ.get("OPENAI_API_KEY"):
-#     os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key (https://platform.openai.com/account/api-keys):\n")
-    
-# # Tavily API Key (for web search)
-# if not os.environ.get("TAVILY_API_KEY"):
-#     os.environ["TAVILY_API_KEY"] = getpass.getpass("Enter your Tavily API key (https://app.tavily.com/home):\n")
-
+if not os.environ.get("TAVILY_API_KEY"):
+    raise RuntimeError("TAVILY_API_KEY is not set")
 
 # In[4]:
 
@@ -386,7 +382,7 @@ display(Image(healthbuddy_agent.get_graph().draw_mermaid_png()))
 
 
 # get agent streaming utils
-get_ipython().system('gdown 1dSyjcjlFoZpYEqv4P9Oi0-kU2gIoolMB')
+#get_ipython().system('gdown 1dSyjcjlFoZpYEqv4P9Oi0-kU2gIoolMB')
 
 
 # In[15]:
