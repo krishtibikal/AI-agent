@@ -11,4 +11,5 @@ ui = gr.Interface(
     title="HealthBuddy AI Agent"
 )
 
-ui.launch()
+# Launch the Gradio app with a public link
+ui.launch(share=True)
