@@ -65,7 +65,11 @@ import os
 import getpass
 from dotenv import load_dotenv, find_dotenv
 
-load_dotenv('/Users/kbikal/Documents/GenAI/.env')
+#load_dotenv('/Users/kbikal/Documents/GenAI/.env')
+
+OPENAI_API_KEY='REMOVED'
+TAVILY_API_KEY='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'
+
 
 # OpenAI API Key (for chat & embeddings)
 if not os.environ.get("OPENAI_API_KEY"):
