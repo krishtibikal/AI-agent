@@ -423,62 +423,62 @@ def call_agent(agent, query, verbose=False):
 # In[16]:
 
 
-# Example usage
-query = "what are the latest methods for diabetes management and recommend a doctor please"
-result = call_agent(healthbuddy_agent, query, verbose=True)
+# # Example usage
+# query = "what are the latest methods for diabetes management and recommend a doctor please"
+# result = call_agent(healthbuddy_agent, query, verbose=True)
 
 
-# In[17]:
+# # In[17]:
 
 
-# inspect all agent events separately
-for event in result:
-    format_message(event)
+# # inspect all agent events separately
+# for event in result:
+#     format_message(event)
 
 
-# In[18]:
+# # In[18]:
 
 
-# Example usage
-query = "I am having panic attacks, what could I do? get detailed comprehensive information please"
-result = call_agent(healthbuddy_agent, query, verbose=True)
+# # Example usage
+# query = "I am having panic attacks, what could I do? get detailed comprehensive information please"
+# result = call_agent(healthbuddy_agent, query, verbose=True)
 
 
-# In[19]:
+# # In[19]:
 
 
-# Example usage without printing detailed log messages
-query = "I am having panic attacks, please recommend a right doctor"
-result = call_agent(healthbuddy_agent, query, verbose=False)
+# # Example usage without printing detailed log messages
+# query = "I am having panic attacks, please recommend a right doctor"
+# result = call_agent(healthbuddy_agent, query, verbose=False)
 
 
-# In[20]:
+# # In[20]:
 
 
-queries = [
-    'Patient 001: Reported panic attacks - please assign doctor',
-    'Patient 003: Diabetes checkup - please assign doctor',
-    'Patien 004: Has the flu - please assign doctor'
-]
+# queries = [
+#     'Patient 001: Reported panic attacks - please assign doctor',
+#     'Patient 003: Diabetes checkup - please assign doctor',
+#     'Patien 004: Has the flu - please assign doctor'
+# ]
 
 
-# In[21]:
+# # In[21]:
 
 
-results = [call_agent(healthbuddy_agent, query, verbose=False) for query in queries]
+# results = [call_agent(healthbuddy_agent, query, verbose=False) for query in queries]
 
 
-# In[22]:
+# # In[22]:
 
 
-import pandas as pd
-pd.set_option('display.max_colwidth', None)
-res_df = pd.DataFrame({'query': queries,
-                       'response': [item[-1].content for item in results]})
-res_df
+# import pandas as pd
+# pd.set_option('display.max_colwidth', None)
+# res_df = pd.DataFrame({'query': queries,
+#                        'response': [item[-1].content for item in results]})
+# res_df
 
 
-# In[ ]:
+# # In[ ]:
 
 
 
